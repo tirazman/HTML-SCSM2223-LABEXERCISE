@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
 	<meta name="description" content="Portfolio of Athierah Zaiman">
 	<title>My Portfolio | Lab 1 Exercise</title>
 
 </head>
-<body style="background-color:#CBFFCB;">
+<body>
 	<main>
 		<section id="contact">
 			<h2>Contact me</h2>
 			<form action="#" method="post">
-				<fieldset style="border: 2px solid black; padding:15px; background-color:#F7EEED;">
-					<legend style="font-size:18px ; color: 	black ;">Your Details</legend>
+				<fieldset>
+					<legend>Your Details</legend>
 
 						<label for="fname">Full Name:</label><br>
-						<input type="text" id="fname" name="fname" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="Your full name" required maxlength="60"><br><br>
+						<input type="text" id="fname" name="fname" placeholder="Your full name" required maxlength="60"><br><br>
 
 						<label for="email">Email:</label><br>
-						<input type="email" id="email" name="email" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="yusoff@gmail.com" required maxlength="60"><br><br>
+						<input type="email" id="email" name="email" placeholder="yusoff@gmail.com" required maxlength="60"><br><br>
 
 						<label for="phone">Phone:</label><br>
-						<input type="tel" id="phone" name="phone" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="011-2347890" required maxlength="60"><br><br>
+						<input type="tel" id="phone" name="phone" placeholder="011-2347890" required maxlength="60"><br><br>
 
 						<label for="age">Age:</label><br>
-						<input type="number" id="age" name="age" min="18" max="99" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="18" required maxlength="60"><br><br>
+						<input type="number" id="age" name="age" min="18" max="99" placeholder="18" required maxlength="60"><br><br>
 
 						<label for="urgency">Urgency Level:</label><br>
 						<input type="range" id="urgency" name="urgency" min="1" max="5"><br><br>
 
 						<label for="Appd">Appointment Date:</label><br>
-						<input type="date" id="Appd" name="Appd" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="Your full name" required maxlength="60"><br><br>
+						<input type="date" id="Appd" name="Appd" placeholder="Your full name" required maxlength="60"><br><br>
 				</fieldset>
 
 				<br>
 
-				<fieldset style="border: 2px solid black; padding:15px; background-color:#F7EEED;">
-					<legend style="font-size:18px ; color: 	black ;">Inquiry Details</legend>	
+				<fieldset>
+					<legend>Inquiry Details</legend>	
 
 						<!---dropdown--->
 						<label for="subject">Subject:</label><br>
-						<select id="subject" name="subject" style="padding 6px;">
+						<select id="subject" name="subject">
 							<optgroup label="Opportunities">
 								<option value="job">Job Offer</option>
 								<option value="freelance">Freelance Project</option>
@@ -70,7 +71,7 @@
 							<label for="message">Your message:</label><br>
 							<textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..." required></textarea><br><br>
 
-					<button type="submit" style="background-color: #EFC9D0; color: black; padding: 10px 20px; font-size: 14px; border: 1px solid black;">Submit</button>
+					<button type="submit">Submit</button>
 				</fieldset>
 			</form>
 		</section>

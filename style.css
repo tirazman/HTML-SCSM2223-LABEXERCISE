@@ -1,0 +1,23 @@
+:root {
+	/*2 primary colours*/
+	--color-primary: 		#3A5A40;
+	--color-secondary:  	#B7E4C7;
+
+	/*2 accent colours*/
+	--color-accent:			#FFACD8;
+	--color-accent-hover:	#FF73C3;
+
+	/*3 neutral greys*/
+	--color-text:			#1a1a1a;
+	--color-muted:			#666666;
+	--color-surface:		#F5F4F0;
+
+	/*2 font families*/
+	--font-body:			'Lora', Georgia, serif;
+	--font-heading:			'Playfair Display', serif;
+
+	/*3 spacing values*/
+	--space-sm: 0.5rem;
+	--space-md: 1.5rem;
+	--space-lg: 3rem;
+}
