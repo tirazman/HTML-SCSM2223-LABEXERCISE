@@ -114,12 +114,28 @@ header {
 	background-color: 	var(--color-primary);
 	padding: 			var(--space-lg);
 	color: 				var(--color-surface);
+
+	/*TASK 3*/
+	display: 			flex;
+	align-items: 		center;
+	justify-content: 	space-between;
+	gap:				var(--space-lg);
 }
 
 nav {
-	background-color:   var(--color-secondary);
+	background-color:   var(--color-accent);
 	padding:			var(--space-md);
-	color:				var(--color-primary);
+	color:				var(--color-secondary);
+
+
+	/*TASK 3 */
+
+	display:			flex;
+	justify-content: 	space-between;
+	position: 			sticky;
+	top: 				0;
+	z-index: 			100;
+	border-radius: 		8px;
 }
 
 main {
@@ -146,8 +162,7 @@ a:visited {
 }
 
 a:hover {
-	color:		  		var(--color-accent);
-	text-decoration: 	underline;
+	color:		  		var(--color-accent-hover);
 }
 
 a:active {
@@ -178,18 +193,40 @@ card {
 }
 
 nav a {
-	padding:			var(--space-sm);
+	padding:			var(--space-sm) var(--space-md);
 	
 	/*Padding is used to make the link more clickable*/
 	border-radius:		8px ;
+
+	/*TASK 3*/
+	transition: 		color 0.2s, background-color 0.2s;
+}
+
+nav a:hover {
+	color: 				var(--color-secondary);
+	background-color: 	var(--color-primary);
 }
 
 Fieldset {
-
 	padding: 			var(--space-md);
 	margin-bottom: 		var(--space-lg);
 
 	/*Padding is used to create space in the fieldset, 
 	while the margin is used to create space outside the fieldset.*/
+}
 
+/*TASK 3*/
+nav ul {
+	display: 			flex;
+	flex-wrap: 			wrap;
+	gap: 				var(--space-md);
+
+	list-style: 		none;
+	padding:			0;
+	margin: 			0;
+}
+
+nav a.active {
+	border-bottom:		3px solid var(--color-accent-hover);
+	font-weight: 		bold;
 }
