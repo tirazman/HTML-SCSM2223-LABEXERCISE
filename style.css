@@ -47,28 +47,28 @@ body{
 h1 {
 	font-size:		3.6rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-primary);
+	color:			var(--color-accent);
 	line-height: 	1.5;
 }
 
 h2 {
 	font-size:		2.8rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-primary);
+	color:			var(--color-accent-hover);
 	line-height: 	1.5;
 }
 
 h3 {
 	font-size:		2.2rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-primary);
+	color:			var(--color-accent-hover);
 	line-height:	1.5;
 }
 
 h4 {
 	font-size:		1.8rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-primary);
+	color:			var(--color-accent-hover);
 	line-height:    1.5;
 }
 
@@ -82,7 +82,7 @@ p {
 small {
 	font-size:		1.2rem;
 	font-family: 	var(--font-body);
-	color:			var(--color-muted);
+	color:			var(--color-surface);
 	line-height:	1.0;
 }
 
@@ -116,25 +116,26 @@ header {
 nav {
 	background-color:   var(--color-secondary);
 	padding:			var(--space-md);
-	color:				var(--color-accent);
+	color:				var(--color-primary);
 }
 
 main {
-	background-color:   var(--color-surface);
+	background-color:   var(--color-secondary);
 	padding:        	var(--space-lg);
-	color:        		var(--color-accent-hover);
+	color:        		var(--color-primary);
 }
 
 footer {
 	background-color:  	var(--color-primary);
 	padding:    		var(--space-md);
-	color:  			var(--color-muted);
+	color:  			var(--color-secondary);
 }
 
 
 a:link {
 	color: 				var(--color-secondary);
-	text-decoration: 	underline;
+	font-size: 			1.6rem;
+	
 }
 
 a:visited {
