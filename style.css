@@ -56,6 +56,9 @@ h2 {
 	font-family:	var(--font-heading);
 	color:			var(--color-accent-hover);
 	line-height: 	1.5;
+
+	margin-bottom: 	var(--space-md);
+	/*Margin is used to push the paragraph text below away from the heading.*/
 }
 
 h3 {
@@ -151,3 +154,42 @@ a:active {
 	color:				var(--color-text);
 }
 
+button {
+	background-color: 	var(--color-accent);
+	color: 				var(--color-primary);
+	padding:			1rem 2rem;
+	margin-top:			var(--space-sm);
+
+	/*Padding is used to make the button more visible and clickable, 
+	while the margin is used to create a gap between adjacent elements.*/
+	border-radius:		8px;
+}
+
+card {
+	background-color:	var(--color-muted);
+	padding: 			var(--space-md);
+	margin: 			var(--space-md);
+
+	/*Padding is used to keep the text inside the card and away from the edges,
+	while margin is used to create space between other cards.*/
+	
+	border-radius:		8px;
+	box-shadow: 		0 4px 6px rgba(0, 0, 0, 1.0);
+}
+
+nav a {
+	padding:			var(--space-sm);
+	
+	/*Padding is used to make the link more clickable*/
+	border-radius:		8px ;
+}
+
+Fieldset {
+
+	padding: 			var(--space-md);
+	margin-bottom: 		var(--space-lg);
+
+	/*Padding is used to create space in the fieldset, 
+	while the margin is used to create space outside the fieldset.*/
+
+}
