@@ -26,6 +26,9 @@
 						<label for="age">Age:</label><br>
 						<input type="number" id="age" name="age" min="18" max="99" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="18" required maxlength="60"><br><br>
 
+						<label for="urgency">Urgency Level:</label><br>
+						<input type="range" id="urgency" name="urgency" min="1" max="5"><br><br>
+
 						<label for="Appd">Appointment Date:</label><br>
 						<input type="date" id="Appd" name="Appd" style="border: 1px solid black; padding: 6px; font-size:14px;" placeholder="Your full name" required maxlength="60"><br><br>
 				</fieldset>
@@ -47,7 +50,7 @@
 							</optgroup>t
 						</select><br><br>
 
-						<!---3 checkboxes--->
+						<!---checkboxes--->
 						<p>Preferred Programming Language:</p>
 						<input type="checkbox" id="proglang" name="proglang" value="C++" required>
 							<label for="proglang">C++</label><br>
@@ -56,7 +59,7 @@
 						<input type="checkbox" id="proglang" name="proglang" value="Java" required>
 							<label for="proglang">Java</label><br>
 
-						<!---3 radio buttons--->
+						<!---radio buttons--->
 						<p>Preferred Contact Method:</p>
 						<input type="radio" id="thruemail" name="ctcpref" value="Email" required>
 							<label for="thruemail">Email</label><br>
@@ -64,6 +67,8 @@
 							<label for="thruphone">Phone</label><br>
 						<input type="radio" id="thrutext" name="ctcpref" value="Text" required>
 							<label for="thrutext">Text</label><br><br>
+							<label for="message">Your message:</label><br>
+							<textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..." required></textarea><br><br>
 
 					<input type="submit" value="Submit" style="background-color: #EFC9D0; padding: 6px;">
 				</fieldset>
