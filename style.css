@@ -1,3 +1,5 @@
+/*TASK 1*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -40,3 +42,111 @@ body{
 	color:				var(--color-text);
 	background-color: 	var(--color-surface);
 }
+
+/*TASK 2*/
+h1 {
+	font-size:		3.6rem;
+	font-family:	var(--font-heading);
+	color:			var(--color-primary);
+	line-height: 	1.5;
+}
+
+h2 {
+	font-size:		2.8rem;
+	font-family:	var(--font-heading);
+	color:			var(--color-primary);
+	line-height: 	1.5;
+}
+
+h3 {
+	font-size:		2.2rem;
+	font-family:	var(--font-heading);
+	color:			var(--color-primary);
+	line-height:	1.5;
+}
+
+h4 {
+	font-size:		1.8rem;
+	font-family:	var(--font-heading);
+	color:			var(--color-primary);
+	line-height:    1.5;
+}
+
+p {
+	font-size:		1.6rem;
+	font-family:	var(--font-body);
+	color:			var(--color-text);
+	line-height:	1.0;
+}
+
+small {
+	font-size:		1.2rem;
+	font-family: 	var(--font-body);
+	color:			var(--color-muted);
+	line-height:	1.0;
+}
+
+blockquote {
+	font-size:		1.6rem;
+	font-family: 	var(--font-body);
+	color: 			var(--color-text);
+	line-height:	1.0;
+}
+
+code {
+	font-size: 		1.4rem;
+	font-family: 	monospace;
+	color: 			var(--color-surface);
+	line-height:	1.0;
+}
+
+caption {
+	font-size:		1.6rem;
+	font-family: 	var(--font-body);
+	color:			var(--color-text);
+	line-height:	1.0;
+}
+
+header {
+	background-color: 	var(--color-primary);
+	padding: 			var(--space-lg);
+	color: 				var(--color-surface);
+}
+
+nav {
+	background-color:   var(--color-secondary);
+	padding:			var(--space-md);
+	color:				var(--color-accent);
+}
+
+main {
+	background-color:   var(--color-surface);
+	padding:        	var(--space-lg);
+	color:        		var(--color-accent-hover);
+}
+
+footer {
+	background-color:  	var(--color-primary);
+	padding:    		var(--space-md);
+	color:  			var(--color-muted);
+}
+
+
+a:link {
+	color: 				var(--color-secondary);
+	text-decoration: 	underline;
+}
+
+a:visited {
+	color:  			var(--color-primary);
+}
+
+a:hover {
+	color:		  		var(--color-accent);
+	text-decoration: 	underline;
+}
+
+a:active {
+	color:				var(--color-text);
+}
+
