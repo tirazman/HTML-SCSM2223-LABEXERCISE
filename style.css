@@ -180,7 +180,7 @@ button {
 	border-radius:		8px;
 }
 
-card {
+.card {
 	background-color:	var(--color-muted);
 	padding: 			var(--space-md);
 	margin: 			var(--space-md);
@@ -190,6 +190,13 @@ card {
 	
 	border-radius:		8px;
 	box-shadow: 		0 4px 6px rgba(0, 0, 0, 1.0);
+
+	/*TASK 4*/
+	transition: 		transform 0.2s ease;
+}
+
+.card:hover {
+	transform: 			translateY(-4px);
 }
 
 nav a {
@@ -229,4 +236,23 @@ nav ul {
 nav a.active {
 	border-bottom:		3px solid var(--color-accent-hover);
 	font-weight: 		bold;
+}
+
+
+/*TASK 4*/
+.page-cards {
+	display: 				grid;
+	grid-template-columns: 	repeat(auto-fit, minmax(260px, 1fr));
+	gap:					1.5rem;
+	grid-auto-rows: 		1fr;
+}
+
+.featured-card {
+	grid-column: 			span 2;
+}
+
+.sidebar-layout {
+	display: 				grid;
+	grid-template-columns: 	1fr 280px;
+	gap: 					1.5rem;
 }
