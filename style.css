@@ -51,6 +51,7 @@ body{
 	font-size: 					1.6rem;
 	color:							var(--color-text);
 	background-color: 	var(--color-surface);
+	width: 100%;
 }
 
 /*TASK 2*/
@@ -89,7 +90,7 @@ p {
 	font-size:		1.6rem;
 	font-family:	var(--font-body);
 	color:				var(--color-text);
-	line-height:	1.0;
+	line-height:	1.5;
 }
 
 small {
@@ -199,6 +200,10 @@ button {
 	background-color:	var(--color-primary);
 	padding: 					var(--space-md);
 	margin: 					var(--space-md);
+	justify-content:  center;
+	align-items: 			center;
+	text-align:       center;
+	display: flex;
 
 	/*Padding is used to keep the text inside the card and away from the edges,
 	while margin is used to create space between other cards.*/
@@ -230,8 +235,10 @@ nav a:hover {
 }
 
 Fieldset {
-	padding: 					var(--space-md);
+	padding: 					var(--space-lg);
 	margin-bottom: 		var(--space-lg);
+	background-color: var(--color-surface);
+	border-radius: 		12px;
 
 	/*Padding is used to create space in the fieldset, 
 	while the margin is used to create space outside the fieldset.*/
@@ -273,13 +280,15 @@ nav a.active {
 	display: 								grid;
 	grid-template-columns: 	1fr 280px;
 	gap: 										1.5rem;
+	padding:								var(--space-lg);
+
 }
 
 /*TASK 5*/
 
 img {
-  	max-width: 	100%;
-  	height: 		auto;
+  max-width: 	100%;
+  height: 		auto;
 }
 
 /* --- Base styles (mobile) --- */
@@ -319,7 +328,7 @@ input, textarea, select {
 
 input:focus, textarea:focus, select:focus {
 	outline: 			none;
-	box-shadow: 	0 0 0 1px;
+	box-shadow: 	0 0 0 1.5px;
 	border-color: var(--color-primary);
 }
 
@@ -327,6 +336,10 @@ input[type="range"] {
 	padding: 					0;
 }
 
+input[type="text"],[type="email"] {
+	width: 100%;
+	max-width: 500px;
+}
 button[type="submit"] {
 	font-family: 			var(--font-heading);
 	background-color: var(--color-accent);
@@ -346,20 +359,54 @@ button[type="submit"]:active {
 	transform: scale(0.97);
 }
 
+blockquote::before {
+	content: '"';
+	font-size: 5rem;
+	color: var(--color-accent-hover);
+	float: left;
+	margin-right: 1rem;
+	line-height: 1.0;
+	font-family: var(--font-heading);
+}
+
+main h2 {
+	position:  relative;
+	padding-left: var(--space-md);
+}
+
+main h2::after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: var(--space-sm);
+	background-color: var(--color-accent);
+	border-radius: 2px;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse;
 	margin-bottom: var(--space-lg);
+	background-color: var(--color-surface);
 }
 
-th,td {
+th {
+	background-color: var(--color-accent-hover);
+	padding: var(--space-sm) var(--space-md);
+	border: 1px solid var(--color-primary);
+	text-align: center;
+	
+}
+td {
 	padding: var(--space-sm) var(--space-md);
 	border: 1px solid var(--color-muted);
 	text-align: center;
 }
 
-tbody tr:nth-child(even) {
-	background-color: var(--color-surface);
+tr:nth-child(even) {
+	background-color: var(--color-accent);
 }
 
 .polished-list li {
