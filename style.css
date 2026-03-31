@@ -307,3 +307,18 @@ img {
   	.page-cards { grid-template-columns: repeat(3, 1fr); }
   	.sidebar-layout { grid-template-columns: 1fr 280px; }
 }
+
+/*TASK 6*/
+inputs, textarea, select {
+	padding: 			var(--space-md);
+	border:				2px var(--color-primary);
+	border-radius: ;	5px
+	font-family: 		monospace;
+
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: 			none;
+	box-shadow: 		0 0 0 3px var(--color-accent);
+	border-color: 		var(--color-primary);
+}
