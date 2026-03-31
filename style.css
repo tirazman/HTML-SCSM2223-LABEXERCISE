@@ -138,6 +138,10 @@ header {
 	flex-direction: 	column;
 }
 
+header p {
+	color: var(--color-secondary);
+}
+
 nav {
 	background-color:   var(--color-accent);
 	padding:						var(--space-md);
@@ -204,6 +208,7 @@ button {
 	align-items: 			center;
 	text-align:       center;
 	display: flex;
+	color: var(--color-secondary);
 
 	/*Padding is used to keep the text inside the card and away from the edges,
 	while margin is used to create space between other cards.*/
@@ -217,6 +222,18 @@ button {
 
 .card:hover {
 	transform: 			translateY(-4px);
+}
+
+.card p {
+	color: var(--color-secondary);
+}
+
+.card a:link, .card a:visited {
+	color: var(--color-secondary);
+}
+
+.card a:hover {
+	color: var(--color-accent-hover);
 }
 
 nav a {
@@ -274,6 +291,7 @@ nav a.active {
 
 .featured-card {
 	grid-column: 						span 2;
+	background-color: var(--color-surface);
 }
 
 .sidebar-layout {
@@ -289,6 +307,7 @@ nav a.active {
 img {
   max-width: 	100%;
   height: 		auto;
+  border: 		0;
 }
 
 /* --- Base styles (mobile) --- */
@@ -429,6 +448,10 @@ tr:nth-child(even) {
 
 .polished-list li:last-child {
 	border-bottom: none;
+}
+
+.site-name {
+	color: var(--color-primary);
 }
 
 
