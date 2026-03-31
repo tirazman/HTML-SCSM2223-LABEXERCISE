@@ -156,7 +156,7 @@ nav {
 
 main {
 	background-color:   var(--color-secondary);
-	padding:        		var(--space-lg);
+	padding:        		var(--space-md);
 	color:        			var(--color-primary);
 }
 
@@ -235,11 +235,11 @@ nav a:hover {
 }
 
 Fieldset {
-	padding: 					var(--space-lg);
+	padding: 					var(--space-md);
 	margin-bottom: 		var(--space-lg);
 	background-color: var(--color-surface);
 	border-radius: 		12px;
-
+	min-width: 				0;
 	/*Padding is used to create space in the fieldset, 
 	while the margin is used to create space outside the fieldset.*/
 }
@@ -278,7 +278,7 @@ nav a.active {
 
 .sidebar-layout {
 	display: 								grid;
-	grid-template-columns: 	1fr 280px;
+	grid-template-columns: 	1fr;
 	gap: 										1.5rem;
 	padding:								var(--space-lg);
 
@@ -315,20 +315,23 @@ img {
   	nav ul { flex-direction: row; }
   	.page-cards { grid-template-columns: repeat(3, 1fr); }
   	.sidebar-layout { grid-template-columns: 1fr 280px; }
+  	main { padding: var(--space-lg); }
+  	Fieldset { padding: var(--space-lg); }
 }
 
 /*TASK 6*/
 input, textarea, select {
 	padding: 					var(--space-md);
-	margin:						var(--space-sm);
-	border:						1px var(--color-primary);
+	margin:						var(--space-sm) 0;
+	border:						1px solid var(--color-primary);
 	border-radius: 		5px;
 	font-family: 			monospace;
+	max-width:        100%;
 }
 
 input:focus, textarea:focus, select:focus {
 	outline: 			none;
-	box-shadow: 	0 0 0 1.5px;
+	box-shadow: 	0 0 0 2.5px var(--color-accent);
 	border-color: var(--color-primary);
 }
 
@@ -388,8 +391,13 @@ main h2::after {
 table {
 	width: 100%;
 	border-collapse: collapse;
-	margin-bottom: var(--space-lg);
 	background-color: var(--color-surface);
+}
+
+.table-resp {
+	overflow-x: auto;
+	width: 100%;
+	margin-bottom: var(--space-lg);
 }
 
 th {
