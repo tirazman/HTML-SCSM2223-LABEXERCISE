@@ -14,21 +14,21 @@
 
 :root {
 	/*2 primary colours*/
-	--color-primary: 		#3A5A40;
+	--color-primary: 			#3A5A40;
 	--color-secondary:  	#B7E4C7;
 
 	/*2 accent colours*/
-	--color-accent:			#FFACD8;
+	--color-accent:				#FFACD8;
 	--color-accent-hover:	#FF73C3;
 
 	/*3 neutral greys*/
-	--color-text:			#1a1a1a;
-	--color-muted:			#666666;
-	--color-surface:		#F5F4F0;
+	--color-text:					#1a1a1a;
+	--color-muted:				#666666;
+	--color-surface:			#F5F4F0;
 
 	/*2 font families*/
-	--font-body:			'Roboto Condensed', Georgia, serif;
-	--font-heading:			'Lora', serif;
+	--font-body:					'Roboto Condensed', Georgia, serif;
+	--font-heading:				'Lora', serif;
 
 	/*3 spacing values*/
 	--space-sm: 0.5rem;
@@ -45,10 +45,11 @@ html{
 }
 
 body{
-	margin:  	0;
-	padding: 	0;
-	font-family: 		var(--font-body);
-	color:				var(--color-text);
+	margin:  						0;
+	padding: 						0;
+	font-family: 				var(--font-body);
+	font-size: 					1.6rem;
+	color:							var(--color-text);
 	background-color: 	var(--color-surface);
 }
 
@@ -56,14 +57,14 @@ body{
 h1 {
 	font-size:		3.6rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-accent);
+	color:				var(--color-accent);
 	line-height: 	1.5;
 }
 
 h2 {
 	font-size:		2.8rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-accent-hover);
+	color:				var(--color-accent-hover);
 	line-height: 	1.5;
 
 	margin-bottom: 	var(--space-md);
@@ -73,66 +74,64 @@ h2 {
 h3 {
 	font-size:		2.2rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-accent-hover);
+	color:				var(--color-accent-hover);
 	line-height:	1.5;
 }
 
 h4 {
 	font-size:		1.8rem;
 	font-family:	var(--font-heading);
-	color:			var(--color-accent-hover);
-	line-height:    1.5;
+	color:				var(--color-accent-hover);
+	line-height:  1.5;
 }
 
 p {
 	font-size:		1.6rem;
 	font-family:	var(--font-body);
-	color:			var(--color-text);
+	color:				var(--color-text);
 	line-height:	1.0;
 }
 
 small {
 	font-size:		1.2rem;
 	font-family: 	var(--font-body);
-	color:			var(--color-surface);
+	color:				var(--color-surface);
 	line-height:	1.0;
 }
 
 blockquote {
 	font-size:		1.6rem;
 	font-family: 	var(--font-body);
-	color: 			var(--color-text);
-	line-height:	1.0;
+	color: 				var(--color-text);
+	line-height:	1.5;
 }
 
 code {
 	font-size: 		1.4rem;
 	font-family: 	monospace;
-	color: 			var(--color-surface);
+	color: 				var(--color-surface);
 	line-height:	1.0;
 }
 
 caption {
 	font-size:		1.6rem;
 	font-family: 	var(--font-body);
-	color:			var(--color-text);
+	color:				var(--color-text);
 	line-height:	1.0;
 }
 
 header {
 	background-color: 	var(--color-primary);
-	padding: 			var(--space-lg);
-	color: 				var(--color-surface);
+	padding: 						var(--space-lg);
+	color: 							var(--color-surface);
 
 	/*TASK 3*/
-	display: 			flex;
-	align-items: 		center;
-	justify-content: 	space-between;
-	gap:				var(--space-lg);
+	display: 						flex;
+	align-items: 				center;
+	justify-content: 		space-between;
+	gap:								var(--space-lg);
 
-	.profile-img {
-		width: 		100px;
-	}
+	.profile-img { width: 		100px; }
 
 	/*TASK 5*/
 	flex-direction: 	column;
@@ -140,36 +139,36 @@ header {
 
 nav {
 	background-color:   var(--color-accent);
-	padding:			var(--space-md);
-	color:				var(--color-secondary);
+	padding:						var(--space-md);
+	color:							var(--color-secondary);
 
 
 	/*TASK 3 */
 
-	display:			flex;
+	display:					flex;
 	justify-content: 	space-between;
-	position: 			sticky;
-	top: 				0;
-	z-index: 			100;
+	position: 				sticky;
+	top: 							0;
+	z-index: 					100;
 	border-radius: 		8px;
 }
 
 main {
 	background-color:   var(--color-secondary);
-	padding:        	var(--space-lg);
-	color:        		var(--color-primary);
+	padding:        		var(--space-lg);
+	color:        			var(--color-primary);
 }
 
 footer {
 	background-color:  	var(--color-primary);
-	padding:    		var(--space-md);
-	color:  			var(--color-secondary);
+	padding:    				var(--space-md);
+	color:  						var(--color-secondary);
 }
 
 
 a:link {
 	color: 				var(--color-secondary);
-	font-size: 			1.6rem;
+	font-size: 		1.6rem;
 	
 }
 
@@ -178,7 +177,7 @@ a:visited {
 }
 
 a:hover {
-	color:		  		var(--color-accent-hover);
+	color:		  	var(--color-accent-hover);
 }
 
 a:active {
@@ -187,9 +186,9 @@ a:active {
 
 button {
 	background-color: 	var(--color-accent);
-	color: 				var(--color-primary);
-	padding:			1rem 2rem;
-	margin-top:			var(--space-sm);
+	color: 							var(--color-primary);
+	padding:						1rem 2rem;
+	margin-top:					var(--space-sm);
 
 	/*Padding is used to make the button more visible and clickable, 
 	while the margin is used to create a gap between adjacent elements.*/
@@ -198,14 +197,14 @@ button {
 
 .card {
 	background-color:	var(--color-primary);
-	padding: 			var(--space-md);
-	margin: 			var(--space-md);
+	padding: 					var(--space-md);
+	margin: 					var(--space-md);
 
 	/*Padding is used to keep the text inside the card and away from the edges,
 	while margin is used to create space between other cards.*/
 	
 	border-radius:		12px;
-	box-shadow: 		0 4px 6px rgba(0, 0, 0, 1.0);
+	box-shadow: 			0 4px 6px rgba(0, 0, 0, 1.0);
 
 	/*TASK 4*/
 	transition: 		transform 0.2s ease;
@@ -216,22 +215,22 @@ button {
 }
 
 nav a {
-	padding:			var(--space-sm) var(--space-md);
+	padding:				var(--space-sm) var(--space-md);
 	
 	/*Padding is used to make the link more clickable*/
-	border-radius:		8px ;
+	border-radius:	8px ;
 
 	/*TASK 3*/
 	transition: 		color 0.2s, background-color 0.2s;
 }
 
 nav a:hover {
-	color: 				var(--color-secondary);
+	color: 							var(--color-secondary);
 	background-color: 	var(--color-primary);
 }
 
 Fieldset {
-	padding: 			var(--space-md);
+	padding: 					var(--space-md);
 	margin-bottom: 		var(--space-lg);
 
 	/*Padding is used to create space in the fieldset, 
@@ -241,10 +240,10 @@ Fieldset {
 /*TASK 3*/
 nav ul {
 	display: 			flex;
-	flex-wrap: 			wrap;
-	gap: 				var(--space-sm);
+	flex-wrap: 		wrap;
+	gap: 					var(--space-sm);
 
-	list-style: 		none;
+	list-style: 	none;
 	padding:			0;
 	margin: 			0;
 
@@ -253,41 +252,41 @@ nav ul {
 }
 
 nav a.active {
-	border-bottom:		3px solid var(--color-accent-hover);
+	border-bottom:	3px solid var(--color-accent-hover);
 	font-weight: 		bold;
 }
 
 
 /*TASK 4*/
 .page-cards {
-	display: 				grid;
+	display: 								grid;
 	grid-template-columns: 	repeat(auto-fit, minmax(260px, 1fr));
-	gap:					1.5rem;
-	grid-auto-rows: 		1fr;
+	gap:										1.5rem;
+	grid-auto-rows: 				1fr;
 }
 
 .featured-card {
-	grid-column: 			span 2;
+	grid-column: 						span 2;
 }
 
 .sidebar-layout {
-	display: 				grid;
+	display: 								grid;
 	grid-template-columns: 	1fr 280px;
-	gap: 					1.5rem;
+	gap: 										1.5rem;
 }
 
 /*TASK 5*/
 
 img {
-  	max-width: 				100%;
-  	height: 				auto;
+  	max-width: 	100%;
+  	height: 		auto;
 }
 
 /* --- Base styles (mobile) --- */
 .card-grid {
-	display: 				grid;
-  	grid-template-columns: 	1fr;
-  	gap: 					var(--space-md);
+	display: 								grid;
+  grid-template-columns: 	1fr;
+  gap: 										var(--space-md);
 }
 
 /* --- Tablet Styles --- */
@@ -295,9 +294,9 @@ img {
   	.card-grid { grid-template-columns: repeat(2, 1fr); }
   	.page-cards { grid-template-columns: repeat(2, 1fr); }
   	header {
-  		flex-direction: row;
-  		text-align: left;
-  		justify-content: space-between;
+  		flex-direction: 	row;
+  		text-align: 			left;
+  		justify-content: 	space-between;
   	}
 }
 
@@ -310,16 +309,40 @@ img {
 }
 
 /*TASK 6*/
-inputs, textarea, select {
-	padding: 			var(--space-md);
-	border:				2px var(--color-primary);
-	border-radius: ;	5px
-	font-family: 		monospace;
-
+input, textarea, select {
+	padding: 					var(--space-md);
+	border:						1px var(--color-primary);
+	border-radius: 		5px;
+	font-family: 			monospace;
 }
 
 input:focus, textarea:focus, select:focus {
 	outline: 			none;
-	box-shadow: 		0 0 0 3px var(--color-accent);
-	border-color: 		var(--color-primary);
+	box-shadow: 	0 0 0 1px;
+	border-color: var(--color-primary);
 }
+
+button[type="submit"] {
+	font-family: 			var(--font-heading);
+	background-color: var(--color-accent);
+	color: 						var(--color-primary);
+	padding: 					1rem 2rem;
+	border: 					none;
+	border-radius: 		8px;
+
+	transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: var(--color-accent-hover);
+}
+
+button[type="submit"]:active {
+	transform: scale(0.97);
+}
+
+
+
+
+
+
