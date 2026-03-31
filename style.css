@@ -311,6 +311,7 @@ img {
 /*TASK 6*/
 input, textarea, select {
 	padding: 					var(--space-md);
+	margin:						var(--space-sm);
 	border:						1px var(--color-primary);
 	border-radius: 		5px;
 	font-family: 			monospace;
@@ -322,11 +323,15 @@ input:focus, textarea:focus, select:focus {
 	border-color: var(--color-primary);
 }
 
+input[type="range"] {
+	padding: 					0;
+}
+
 button[type="submit"] {
 	font-family: 			var(--font-heading);
 	background-color: var(--color-accent);
 	color: 						var(--color-primary);
-	padding: 					1rem 2rem;
+	padding: 					var(--space-md);
 	border: 					none;
 	border-radius: 		8px;
 
@@ -355,6 +360,20 @@ th,td {
 
 tbody tr:nth-child(even) {
 	background-color: var(--color-surface);
+}
+
+.polished-list li {
+	padding: var(--space-sm);
+	border-top: 1px solid var(--color-muted);
+	border-bottom: 1px solid var(--color-muted);
+}
+
+.polished-list li:first-child {
+	border-top: none;
+}
+
+.polished-list li:last-child {
+	border-bottom: none;
 }
 
 
