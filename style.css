@@ -132,7 +132,9 @@ header {
 	justify-content: 		space-between;
 	gap:								var(--space-lg);
 
-	.profile-img { width: 		100px; }
+	.profile-img { 
+		width: 		100px;
+		border-radius:		70% }
 
 	/*TASK 5*/
 	flex-direction: 	column;
